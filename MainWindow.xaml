@@ -1,0 +1,29 @@
+﻿<Window x:Class="DoubleAnnouncement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+
+            <TextBlock Text="Tabbing through elements with tooltips will sometimes speak the name (and the tooltip) twice. This does not happen to elements without tooltips." TextWrapping="Wrap" Margin="4" />
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="With Tooltip" Width="100" VerticalAlignment="Center" />
+                <Button Margin="4" Padding="4" Content="A" ToolTip="A Tooltip" />
+                <Button Margin="4" Padding="4" Content="B" ToolTip="B Tooltip"  />
+                <Button Margin="4" Padding="4" Content="C" ToolTip="C Tooltip"  />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="Without Tooltip" Width="100" VerticalAlignment="Center" />
+                <Button Margin="4" Padding="4" Content="A" />
+                <Button Margin="4" Padding="4" Content="B" />
+                <Button Margin="4" Padding="4" Content="C" />
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
